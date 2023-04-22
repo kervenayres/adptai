@@ -1,0 +1,134 @@
+body, html{
+    background: #E5E5E5;
+    margin: 25px;
+    padding: 10px;
+}
+
+div#logo{
+    display:block;
+    position:absolute;
+    background-image: url("imagens/logoAdaptAI.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+#logo h2{
+    margin-left: 60px;
+    margin-top: 7px;
+    font-family: DM Sans;
+    font-size: 20pt;
+}
+
+div#conteudo{
+    display: block;
+    position: absolute;
+    width: 600px;
+    margin-top: 100px;
+    padding: 0px;
+}
+
+h1{
+    font-family: DM Sans;
+    color: #211888;
+    font-size: 26pt;
+}
+
+p{
+    font-family: DM Sans;
+    color: #6F6C90;
+    font-size: 14pt;
+}
+
+div#imagem{
+    display: block;
+    position: absolute;
+    background-image: url("imagens/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 715px;
+    width: 774.5px;
+    margin-left: 125px;
+    margin-right: 200px;
+    padding: 10px;  
+    left: 600px;
+    top: 0px;
+}
+
+div#botoes{
+    position: relative;
+    top: 450px;
+}
+
+#botoes #iniciar, #saibaMais{
+    font-family: DM Sans;
+    font-size: 16pt;
+    text-align: center;
+    line-height: 1.5cm;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30p;
+    padding-bottom: 5px;
+    margin-right: 80px;
+    border-radius: 50px;
+}
+
+#iniciar{
+    margin-left: 40px;
+    background-color: #4A3AFF;
+    color: white;
+    border: none;
+}
+
+#iniciar:hover{
+    background-color: #020111;
+    transition: 700ms;
+}
+
+#saibaMais{
+    background-color: white;
+    color: #4A3AFF;
+    border: 2px solid #4A3AFF;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#saibaMais:hover{
+    background-color: #1d1b1b;
+    color: #d8d8da;
+    border: 3px dotted #766deb;
+    transition: 700ms;
+}
+
+#rodape{
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 1573px;
+    margin-left: -55px;
+    bottom: -160px;
+    border-top: 1px solid rgb(179, 178, 178);   
+}
+
+#rodape img{
+    margin-top: 25px;
+    margin-left: 125px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+#rodape h2{
+    margin-left: 175px;
+    margin-top: 30px;
+    font-family: DM Sans;
+    font-size: 20pt;
+}
+
+#rodape p{
+    margin-left: 125px;
+    margin-top: 5px;
+    font-family: DM Sans;
+    font-size: 14pt;
+}
