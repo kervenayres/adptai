@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="informacoes.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
     <title>AdaptAI</title>
 
     <script>
-        function home(){
-            window.location.href = "index.html"
+        function home() {
+            window.location.href = "index.html";
         }
 
-        function iniciar(){
-            window.location.href = "iniciar.html"
+        function iniciar() {
+            window.location.href = "iniciar.html";
         }
     </script>
 </head>
+
 <body>
-    <div class="logo">
-        <img src="imagens/logoAdaptAI.png" alt="logo">
-        <h2>AdaptAI</h2>
-    </div>
 
-    <div class="menu">
-        <input type="button" value="Home" onclick="home()" id="home">
-        <input type="button" value="Iniciar" onclick="iniciar()" id="iniciar">
-    </div>
 
-    <div class="conteudo">
+    <div class="conteudo-informacoes">
+        <div id="logoContainer">
+            <img src="./imagens/logoAdaptAI.png" alt="" id="imgLogo">
+            <h2>AdaptAI</h2>
+            <div class="menu">
+                <input type="button" value="Home" onclick="home()" id="home">
+                <input type="button" value="Iniciar" onclick="iniciar()" id="iniciar">
+            </div>
+        </div>
+
+
         <h1>Informações</h1>
-        <p>O projeto AdaptAI tem como propósito utilizar a tecnologia de inteligência artificial para melhorar a experiência de jogadores em jogos eletrônicos. O programa foi criado com o objetivo de permitir que os jogadores tenham um desafio adequado às suas habilidades, proporcionando uma experiência de jogo mais envolvente e gratificante.<br/><br/><br/>
+        <p>O projeto AdaptAI tem como propósito utilizar a tecnologia de inteligência artificial para melhorar a
+            experiência de jogadores em jogos eletrônicos. O programa foi criado com o objetivo de permitir que os
+            jogadores tenham um desafio adequado às suas habilidades, proporcionando uma experiência de jogo mais
+            envolvente e gratificante.<br /><br /><br />
 
 
-        Ao analisar e armazenar informações sobre as habilidades do personagem e dos inimigos em um determinado jogo, o programa é capaz de criar respostas mais precisas e desafiadoras dos inimigos em relação às habilidades do jogador. Isso significa que os jogadores não terão que enfrentar inimigos muito fáceis ou muito difíceis, o que pode reduzir a motivação para continuar jogando.<br/><br/><br/>
-            
-            
-        Com o AdaptAI, os desenvolvedores de jogos também podem economizar tempo e recursos, pois o programa pode ajudar a reduzir o tempo e o esforço necessários para ajustar o nível de dificuldade do jogo manualmente. Isso permite que os desenvolvedores possam se concentrar em outras áreas do jogo, como a criação de conteúdo e aprimoramento de gráficos.<br/><br/><br/>
-            
-            
-        Em resumo, o propósito do projeto AdaptAI é criar uma experiência de jogo mais personalizada e envolvente, utilizando a inteligência artificial para ajustar o nível de dificuldade do jogo de acordo com as habilidades do jogador. O programa pode beneficiar tanto os jogadores quanto os desenvolvedores de jogos, economizando tempo e recursos e melhorando a experiência de jogo.<br/><br/><br/></p>
+            Ao analisar e armazenar informações sobre as habilidades do personagem e dos inimigos em um determinado
+            jogo, o programa é capaz de criar respostas mais precisas e desafiadoras dos inimigos em relação às
+            habilidades do jogador. Isso significa que os jogadores não terão que enfrentar inimigos muito fáceis ou
+            muito difíceis, o que pode reduzir a motivação para continuar jogando.<br /><br /><br />
+
+
+            Com o AdaptAI, os desenvolvedores de jogos também podem economizar tempo e recursos, pois o programa pode
+            ajudar a reduzir o tempo e o esforço necessários para ajustar o nível de dificuldade do jogo manualmente.
+            Isso permite que os desenvolvedores possam se concentrar em outras áreas do jogo, como a criação de conteúdo
+            e aprimoramento de gráficos.<br /><br /><br />
+
+
+            Em resumo, o propósito do projeto AdaptAI é criar uma experiência de jogo mais personalizada e envolvente,
+            utilizando a inteligência artificial para ajustar o nível de dificuldade do jogo de acordo com as
+            habilidades do jogador. O programa pode beneficiar tanto os jogadores quanto os desenvolvedores de jogos,
+            economizando tempo e recursos e melhorando a experiência de jogo.<br /><br /><br /></p>
     </div>
 
     <div id="rodape">
         <img src="imagens/logoAdaptAI.png" alt="logo">
         <h2>AdaptAI</h2>
-        <p>Copyright © 2023 AdptAI | All Rights Reserved</p>
+        <div>
+
+            <p>Copyright © 2023 AdaptAI | All Rights Reserved</p>
+        </div>
     </div>
 </body>
+
 </html>

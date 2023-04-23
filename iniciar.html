@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="iniciar.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
     <title>AdaptAI</title>
 
@@ -21,118 +21,148 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="imagens/logoAdaptAI.png" alt="logo">
-        <h2>AdaptAI</h2>
-    </div>
+    <div class="conteudo-informacoes">
 
-    <div class="menu">
-        <input type="button" value="Home" onclick="home()" id="home">
-        <input type="button" value="Informações" onclick="informacoes()" id="informacoes">
-    </div>
-
-    <div class="conteudo">
-        <img src="imagens/Sanduba_cinematic_4K_HD_image_with_dramatic_orange_and_blue_lig_45c73d60-b167-4808-935f-05ebb1f1a36f.png"
-            alt=" Imagem da aba de iniciar">
-
-        <h2>Projeto</h2>
-
-        <div class="container-atributos">
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Name</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
+        <div id="logoContainer">
+            <img src="./imagens/logoAdaptAI.png" alt="" id="imgLogo">
+            <h2>AdaptAI</h2>
+            <div class="menu">
+                <input type="button" value="Home" onclick="home()" id="home">
+                <input type="button" value="Informações" onclick="informacoes()" id="informacoes">
             </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Level</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Strenght</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Agility</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Life</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Intelligence</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Dexterity</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Faith</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-            <div class="linha-unica">
-                <div class="retangulo">
-                    <p>Resistance</p>
-                </div>
-                <div class="retangulo"></div>
-                <div class="button-container">
-                    <input type="button" value="+">
-                </div>
-            </div>
-
-
         </div>
 
 
-        <input type="button" value="Generate">
-        <input type="button" value="Cancelar">
-        <input type="button" value="Confirmar">
+        <div class="conteudo-iniciar">
+
+
+            <h2 id="tituloGerador">Projeto</h2>
+            <form action="" onsubmit="generateAttrs(event)" style="width: 100%">
+                <div id="linhaAtributosImagem">
+                    <div class="container-atributos">
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Name</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="text" name="NAME">
+                            </div>
+
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Strenght</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="STRENGTH">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Agility</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="AGILITY">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Life</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="LIFE">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Mana</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="MANA">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Intelligence</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="INTELLIGENCE">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Dexterity</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="DEXTERITY">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Faith</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="FAITH">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Resistance</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="number" value="0" name="RESISTANCE">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Difficulty</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="text" value="Fácil" name="DIFFICULTY">
+                            </div>
+                        </div>
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Equipament</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="text" name="EQUIPAMENT">
+                            </div>
+                        </div>
+
+                        <div class="linha-unica">
+                            <div class="retangulo">
+                                <p>Damage Type</p>
+                            </div>
+                            <div class="retangulo">
+                                <input type="text" value="Híbrido" name="DAMAGE_TYPE">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="containerImagem">
+                        <img src="imagens/Sanduba_cinematic_4K_HD_image_with_dramatic_orange_and_blue_lig_45c73d60-b167-4808-935f-05ebb1f1a36f.png"
+                            alt=" Imagem da aba de iniciar" id="imagemGerador">
+                    </div>
+                </div>
+
+                <div id="menuGerador">
+                    <button type="submit" value="Generate">Generate</button>
+                    <button type="button" value="Cancelar" onclick="cancelAttrs()">Cancelar</button>
+                    <button type="button" value="Confirmar">Confirmar</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div id="rodape">
         <img src="imagens/logoAdaptAI.png" alt="logo">
         <h2>AdaptAI</h2>
-        <p>Copyright © 2023 AdptAI | All Rights Reserved</p>
+        <div>
+
+            <p>Copyright © 2023 AdaptAI | All Rights Reserved</p>
+        </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
