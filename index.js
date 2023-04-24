@@ -17,7 +17,7 @@ const generateAttrs = async (event) => {
         }
         jsonData[key] = value;
     });
-    const response = await fetch("http://localhost:8000/", {
+    const response = await fetch("http://18.231.186.141:8000/", {
         method: "POST",
         body: JSON.stringify(jsonData),
         headers: {
