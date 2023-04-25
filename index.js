@@ -28,7 +28,7 @@ const generateAttrs = async (event) => {
     console.log(responseData);
 
     formInputs.forEach(input => {
-        if (input.type === 'number') {
+        if (input.className === 'teste') {
             input.value = Math.floor(responseData[input.name]);
             return;
         }

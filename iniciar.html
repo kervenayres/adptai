@@ -54,7 +54,7 @@
                                 <p>Strenght</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="STRENGTH">
+                                <input type="number" value="0" name="STRENGTH" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -62,7 +62,7 @@
                                 <p>Agility</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="AGILITY">
+                                <input type="number" value="0" name="AGILITY" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -70,7 +70,7 @@
                                 <p>Life</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="LIFE">
+                                <input type="number" value="0" name="LIFE" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -78,7 +78,7 @@
                                 <p>Mana</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="MANA">
+                                <input type="number" value="0" name="MANA" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -86,7 +86,7 @@
                                 <p>Intelligence</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="INTELLIGENCE">
+                                <input type="number" value="0" name="INTELLIGENCE" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -94,7 +94,7 @@
                                 <p>Dexterity</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="DEXTERITY">
+                                <input type="number" value="0" name="DEXTERITY" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -102,7 +102,7 @@
                                 <p>Faith</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="FAITH">
+                                <input type="number" value="0" name="FAITH" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -110,7 +110,7 @@
                                 <p>Resistance</p>
                             </div>
                             <div class="retangulo">
-                                <input type="number" value="0" name="RESISTANCE">
+                                <input type="number" value="0" name="RESISTANCE" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -118,7 +118,7 @@
                                 <p>Difficulty</p>
                             </div>
                             <div class="retangulo">
-                                <input type="text" value="Fácil" name="DIFFICULTY">
+                                <input type="text" value="Fácil" name="DIFFICULTY" min="0">
                             </div>
                         </div>
                         <div class="linha-unica">
@@ -126,7 +126,7 @@
                                 <p>Equipament</p>
                             </div>
                             <div class="retangulo">
-                                <input type="text" name="EQUIPAMENT">
+                                <input type="text" value="Híbrido" name="EQUIPAMENT" min="0">
                             </div>
                         </div>
 
@@ -146,9 +146,8 @@
                 </div>
 
                 <div id="menuGerador">
-                    <button type="submit" value="Generate">Generate</button>
                     <button type="button" value="Cancelar" onclick="cancelAttrs()">Cancelar</button>
-                    <button type="button" value="Confirmar">Confirmar</button>
+                    <button type="submit" value="Generate">Generate</button>
                 </div>
             </form>
         </div>
